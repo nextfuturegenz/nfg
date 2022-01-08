@@ -1,6 +1,6 @@
-(function($) {
+(function ($) {
 	'use strict';
-	$(function() {
+	$(function () {
 		$('.owl-carousel-projects').owlCarousel({
 			loop: true,
 			stagePadding: 100,
@@ -8,9 +8,14 @@
 			nav: false,
 			responsive: {
 				0: {
-					items: 2
+					items: 1,
+					dots: false,
 				},
-				600: {
+				512: {
+					items: 2,
+					dots: false,
+				},
+				768: {
 					items: 3
 				},
 				1000: {
@@ -20,22 +25,22 @@
 		})
 		var wWidth = $(window).width();
 		var menuWidth = $(".navbar-collapse").width();
-		$(".navbar-toggler").click(function() {
+		$(".navbar-toggler").click(function () {
 			$('.collapsing').toggleClass('show');
 			$('body').addClass("sidebar-overlay");
 		});
-		$("#mobile-menu-overlay, .close-menu, .nav-link").click(function() {
+		$("#mobile-menu-overlay, .close-menu, .nav-link").click(function () {
 			$('.collapse').toggleClass('show');
 			$('body').removeClass("sidebar-overlay");
 		});
 
-		$("a.nav-link").on('click', function(event) {
+		$("a.nav-link").on('click', function (event) {
 			if (this.hash !== "") {
 				event.preventDefault();
 				var hash = this.hash;
 				$('html, body').animate({
 					scrollTop: $(hash).offset().top
-				}, 800, function() {
+				}, 800, function () {
 
 					window.location.hash = hash;
 				});
@@ -57,14 +62,14 @@
 			buttons: false,
 		});
 
-		$('.flipster-custom-nav-link').click(function() {
+		$('.flipster-custom-nav-link').click(function () {
 			var navlinkSelected = parseInt(this.title);
 			$('.flipster-custom-nav-link').removeClass("active");
 			$(this).addClass("active");
 			$("#testimonial-flipster").flipster('jump', navlinkSelected);
 		});
 
-		$('#toggle-switch').click(function() {
+		$('#toggle-switch').click(function () {
 			if ($('#toggle-switch').is(':checked')) {
 				$('.monthly').addClass("text-active");
 				$('.yearly').removeClass("text-active");
@@ -81,7 +86,7 @@
 		var isc = parseInt($('.scVal').text());
 		var tim;
 		function run() {
-			tim = setInterval(function() {
+			tim = setInterval(function () {
 				if (isc >= maxScVal) {
 					clearInterval(tim);
 					return;
@@ -97,7 +102,7 @@
 		var ifP = parseInt($('.fpVal').text());
 		var timfP;
 		function runfP() {
-			timfP = setInterval(function() {
+			timfP = setInterval(function () {
 
 				if (ifP >= maxfPVal) {
 					clearInterval(timfP);
@@ -115,7 +120,7 @@
 		var itm = parseInt($('.tMVal').text());
 		var timtM;
 		function runtM() {
-			timtM = setInterval(function() {
+			timtM = setInterval(function () {
 				if (itm >= maxtMVal) {
 					clearInterval(timtM);
 					return;
@@ -131,7 +136,7 @@
 		var ibP = parseInt($('.bPVal').text());
 		var timbP;
 		function runbP() {
-			timbP = setInterval(function() {
+			timbP = setInterval(function () {
 				if (ibP >= maxbPVal) {
 					clearInterval(timbP);
 					return;
