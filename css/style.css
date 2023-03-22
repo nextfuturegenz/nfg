@@ -9049,6 +9049,15 @@ mark,
   height: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .mobile-100 {
+    height:30vh;
+    margin-left: 100px;
+    margin-bottom: 70px;
+  }
+
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
