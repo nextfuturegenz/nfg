@@ -51,13 +51,16 @@
                         <a class="nav-link" href="/blogs">Blogs</a>
                     </li>
                     <li class="nav-item ">
-                        <a target="_blank" class="nav-link" href="https://www.linkedin.com/company/nextfuturegenz">Linkedin</a>
+                        <a target="_blank" class="nav-link"
+                            href="https://www.linkedin.com/company/nextfuturegenz">Linkedin</a>
                     </li>
                     <li class="nav-item ">
-                        <a target="_blank" class="nav-link " href="https://www.instagram.com/nextfuturegenz/">Instagram</a>
+                        <a target="_blank" class="nav-link "
+                            href="https://www.instagram.com/nextfuturegenz/">Instagram</a>
                     </li>
                     <li class="nav-item ">
-                        <a target="_blank" class="nav-link " href="https://www.facebook.com/NextFuturegenz/">Facebook</a>
+                        <a target="_blank" class="nav-link "
+                            href="https://www.facebook.com/NextFuturegenz/">Facebook</a>
                     </li>
                 </ul>
             </div>
@@ -67,67 +70,154 @@
 
 
         <section class="" id="">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h3 class="font-weight-medium text-dark mb-3">Welcome to Cascading Style Sheets (CSS)</h3> <!-- Title -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="font-weight-medium text-dark mb-3">Welcome to Cascading Style Sheets (CSS)</h3>
+                        <!-- Title -->
                         <h6 class="text-dark mb-4">Add Design and beauty to html </h6> <!-- Sub Title  -->
-                        <h5 class="text-dark">By - <a href="https://www.linkedin.com/in/ashish-singh-nfg" target="_blank">Ashish Singh</a></h5> <!-- Author, Please add only your linkedIn profile url -->
-                        <h5 class="text-dark mb-5">Engineer at  <a href="https://www.linkedin.com/company/nextfuturegenz" target="_blank">NextFuturegenz</a></h5> <!-- Author Designation with work place link, Please add only your linkedIn profile url -->
-					</div>
-				</div>
-				<div class="row" data-aos="fade-up">
+                        <h5 class="text-dark">By - <a href="https://www.linkedin.com/in/ashish-singh-nfg"
+                                target="_blank">Ashish Singh</a></h5>
+                        <!-- Author, Please add only your linkedIn profile url -->
+                        <h5 class="text-dark mb-5">Engineer at <a href="https://www.linkedin.com/company/nextfuturegenz"
+                                target="_blank">NextFuturegenz</a></h5>
+                        <!-- Author Designation with work place link, Please add only your linkedIn profile url -->
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-12">
                         <h6 class="text-dark mb-3 mt-4 font-weight-medium">What is CSS ?</h6> <!-- Sub Heading  -->
                         <!-- Data  -->
                         <p>
-                            Cascading Style Sheet (CSS) is a simple mechanism to add design you html structure. We can add css file to html either in head using link as <code> < link rel="stylesheet" href="path/of/css/file" >  </code>  or we can provide inline css using <code> style </code> attribute of that tag as <code> < h2 style="color:red;margin-left:40px;"></h2> </code>
+                            CSS (Cascading Style Sheets) is a fundamental component of web development. It provides a
+                            way to add style, layout, and design to HTML documents, making web pages look visually
+                            appealing and professional. CSS is a style sheet language that allows web developers to
+                            separate the presentation of a document from its content. In this tutorial, we will cover
+                            the basics of CSS, including syntax, selectors, properties, and values, and show you how to
+                            apply CSS to HTML documents to style web pages.
                         </p>
                     </div>
-                    <!-- <div class="col-sm-12">
-                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Basic Html Tags</h6> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Syntax</h6> <!-- Sub Heading  -->
+                        <!-- Data  -->
                         <p>
-                            Every html tag must have a starting tag <code> < tagName > </code> and ending tag <code> < /tagName > </code>
+                            The syntax of CSS is straightforward. It consists of a selector, followed by one or more
+                            declarations, which are enclosed in curly braces. The selector specifies which element or
+                            elements the style rules apply to, and the declarations specify the properties and values
+                            that define the style.
                         </p>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>DOCTYPE</strong> - Every Html must begin with document type declaration, and helps browsers to display web pages correctly.
-                                It must only appear once, at the top of the page even before <code> < html > </code>tag. <br>
-                                Doctype declaration for html5 is <code> < !DOCTYPE html > </code>
-                            </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>HTML</strong> Every html document must have a html tag, its the root tag for html file it must contant <code> < head > </code> and <code> < body > </code> tags </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Head</strong>  </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Body</strong>  </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Heading</strong>  </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Paragraph</strong>  </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Link</strong>  </p>
-						</div>
-                        <div class="d-flex justify-content-start mb-3">
-							<img src="../images/tick.png" alt="tick" class="mr-3 tick-icon">
-							<p class="mb-0"><strong>Image</strong>  </p>
-						</div>
-                    </div> -->
-				</div>
-			</div>
-		</section>
+                        <p>Here is an example of the basic syntax of CSS:</p>
+                        <pre><code>
+selector {
+    property: value;
+    property: value;
+    property: value;
+}                            
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Selectors</h6> <!-- Sub Heading  -->
+                        <!-- Data  -->
+                        <p>
+                            Selectors are used to specify which elements in an HTML document the style rules apply to.
+                            There are several types of selectors in CSS, including:
+                        </p>
+                        <ul>
+                            <li>Element selectors: These apply to all instances of a particular element. For example,
+                                the <code>`p`</code> selector applies to all <code>`p`</code> elements in the document.</li><br>
+                            <li>Class selectors: These apply to all elements that have a specific class attribute. For
+                                example, the <code>`.my-class`</code> selector applies to all elements with the <code>`class="my-class"`</code>
+                                attribute.</li><br>
+                            <li>ID selectors: These apply to a single element that has a specific ID attribute. For
+                                example, the <code>`#my-id`</code> selector applies to the element with the <code>`id="my-id"`</code> attribute.</li>
+                            <br>
+                            <li>Attribute selectors: These apply to all elements that have a specific attribute or
+                                attribute value. For example, the <code>`[type="text"]`</code> selector applies to all elements with
+                                the <code>`type="text"`</code> attribute.</li><br>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Properties and Values</h6>
+                        <!-- Sub Heading  -->
+                        <!-- Data  -->
+                        <p>
+                            CSS properties are used to define the style of an element. There are many CSS properties,
+                            each with its own set of possible values. Some common properties include:
+                        </p>
+                        <ul>
+                            <li><code>`color`</code>: Specifies the text color of an element.</li><br>
+                            <li><code>`font-size`</code>: Specifies the size of the font used in an element.</li><br>
+                            <li><code>`background-color`</code>: Specifies the background color of an element.</li><br>
+                            <li><code>`border`</code>: Specifies the border properties of an element.</li><br>
+                            <li><code>`padding`</code>: Specifies the padding around the content of an element.</li><br>
+                            <li><code>`margin`</code>: Specifies the margin around an element.</li><br>
+                        </ul>
+                        <p>
+                            Here is an example of CSS properties and their values:
+                        </p>
+                        <pre>
+                            <code>
+selector {
+    color: red;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Properties and Values</h6>
+                        <p>
+                            To apply CSS to an HTML document, you need to link the CSS file to the HTML file using the
+                            <code>`&lt;link&gt;`</code> tag. The
+                            <code>`&lt;link&gt;`</code> tag goes in the
+                            <code>`&lt;head&gt;`</code> section of the HTML document, and it specifies the location of
+                            the CSS file.
+                        </p>
+                        <p>
+                            Here is an example of how to link a CSS file to an HTML document:
+                        </p>
+                        <pre>
+                            <code>
+&lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+&lt;/head&gt;                                
+                            </code>
+                        </pre>
+
+                        <p>
+                            In the example above, the <code>`href`</code> attribute specifies the location of the CSS file, and the <code>`rel`</code>
+                            attribute specifies the relationship between the HTML document and the CSS file.
+                        </p>
+                        <p>
+                            Once the CSS file is linked to the HTML document, you can use the selectors, properties, and
+                            values to style the elements in the HTML document.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-sm-12">
+                        <h6 class="text-dark mb-3 mt-4 font-weight-medium">Conclusion</h6>
+                        <p>
+                            CSS is a powerful tool for web developers. It allows you to separate the presentation of a
+                            document from its content, making it easier to maintain and update your web pages. In this
+                            tutorial, we covered the basics of CSS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -185,11 +275,16 @@
                             <div class="col-sm-3">
                                 <h6 class="footer-title">Technologies</h6>
                                 <ul class="list-footer">
-                                    <li><a href="/blogs/technology/html/introduction.html" class="footer-link">HTML</a></li>
-                                    <li><a href="/blogs/technology/css/introduction.html" class="footer-link">CSS</a></li>
-                                    <li><a href="/blogs/technology/javascript/introduction.html" class="footer-link">Javascript</a></li>
-                                    <li><a href="/blogs/technology/terminal/introduction.html" class="footer-link">Terminal</a></li>
-                                    <li><a href="/blogs/technology/git/introduction.html" class="footer-link">Git</a></li>
+                                    <li><a href="/blogs/technology/html/introduction.html" class="footer-link">HTML</a>
+                                    </li>
+                                    <li><a href="/blogs/technology/css/introduction.html" class="footer-link">CSS</a>
+                                    </li>
+                                    <li><a href="/blogs/technology/javascript/introduction.html"
+                                            class="footer-link">Javascript</a></li>
+                                    <li><a href="/blogs/technology/terminal/introduction.html"
+                                            class="footer-link">Terminal</a></li>
+                                    <li><a href="/blogs/technology/git/introduction.html" class="footer-link">Git</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-sm-3">
